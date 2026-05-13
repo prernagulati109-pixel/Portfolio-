@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: gray;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: purple;
+  color: white;
+}
+
+.nav-link.active {
+  background: purple;
+  color: white;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark {
+  background: #111;
+}
+
+.home h1 {
+  font-size: 40px;
+}
+
+.home h2 {
+  margin: 10px 0;
+}
+
+/* Scroll Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to right, purple, pink);
+  z-index: 2000;
+}
+
+.contact-form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #f0d2d2;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color:aqua;
+      color:  rgb(28, 65, 183);
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .contact-form button:hover {
+      background-color:aqua;
+    }
