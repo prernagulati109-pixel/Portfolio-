@@ -17,9 +17,9 @@ function Contact() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
               Let's <span className="text-purple-500">Connect</span>
             </h2>
-            <p className="text-gray-400 text-lg mb-12">
-              I'm currently looking for internship opportunities. If you have a question or just want to say hi, my inbox is always open!
-            </p>
+            {/* <p className="text-gray-400 text-lg mb-12">
+              I'm currently open to new opportunities and collaborations. If you have a question or just want to say hi, my inbox is always open!
+            </p> */}
 
             <div className="space-y-6">
               <div className="flex items-center gap-6 group">

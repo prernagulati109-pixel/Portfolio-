@@ -29,9 +29,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold tracking-wider uppercase mb-4 border border-purple-500/20">
-            Available for Internships
-          </span>
+
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
             Hi, I'm <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Prerna</span>
           </h1>

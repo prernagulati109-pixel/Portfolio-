@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { portfolioData } from "../data";
+import profileImg from "../assets/about-me.jpeg";
 
 function About() {
   return (
@@ -29,8 +30,11 @@ function About() {
             className="relative"
           >
             <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-purple-600/20 to-pink-600/20 border border-white/10 flex items-center justify-center">
-              {/* You could add a profile image here if available */}
-              <div className="text-8xl">👩‍💻</div>
+              <img 
+                src={profileImg} 
+                alt="Profile" 
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-6 -right-6 w-24 h-24 bg-purple-600/30 rounded-full blur-2xl"></div>

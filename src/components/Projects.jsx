@@ -15,9 +15,9 @@ function Projects() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Featured <span className="text-purple-500">Projects</span>
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          {/* <p className="text-gray-500 max-w-2xl mx-auto">
             Selection of my favorite works, ranging from full-stack applications to machine learning systems.
-          </p>
+          </p> */}
         </motion.div>
       </div>
 
@@ -54,13 +54,13 @@ function Projects() {
                 ))}
               </div>
 
-              <a
+              {/* <a
                 href={project.link}
                 className="inline-flex items-center text-white text-sm font-semibold group/link"
               >
                 View Project 
                 <span className="ml-2 group-hover/link:translate-x-1 transition-transform">→</span>
-              </a>
+              </a> */}
             </div>
           </motion.div>
         ))}
