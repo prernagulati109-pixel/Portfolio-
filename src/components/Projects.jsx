@@ -54,13 +54,19 @@ function Projects() {
                 ))}
               </div>
 
-              {/* <a
-                href={project.link}
-                className="inline-flex items-center text-white text-sm font-semibold group/link"
-              >
-                View Project 
-                <span className="ml-2 group-hover/link:translate-x-1 transition-transform">→</span>
-              </a> */}
+              {project.link ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center text-purple-400 hover:text-purple-300 text-sm font-semibold group/link transition-colors"
+                >
+                  Live Demo
+                  <span className="ml-2 group-hover/link:translate-x-1 transition-transform">→</span>
+                </a>
+              ) : (
+                <span className="text-gray-600 text-sm italic">Offline / Local App</span>
+              )}
             </div>
           </motion.div>
         ))}

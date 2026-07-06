@@ -1,72 +1,70 @@
 export const portfolioData = {
   name: "Prerna",
   title: "Full-Stack Developer",
-  profile: "Computer Science Engineering student skilled in HTML, CSS, JavaScript, React.js, and Node.js with hands-on experience in web development and machine learning projects. Passionate about building responsive, user-friendly applications and solving real-world problems through efficient and scalable solutions.",
+  profile: "Computer Science Engineering student with hands-on experience in Full Stack Web Development, specializing in React.js, Node.js, Express.js, and MongoDB. Experienced in building scalable web applications, integrating AI-powered solutions using Google Gemini AI, and developing machine learning-based projects. Proven ability to design responsive user interfaces, develop RESTful APIs, and manage end-to-end application development through academic projects.",
   contact: {
     phone: "+91 9876599109",
-    email: "gulatiprerna676@gmail.com",
+    whatsapp: "+91 9876599109",
+    email: "prerna93411@gmail.com",
     location: "Jalandhar, Punjab",
     github: "https://github.com/prernagulati109-pixel"
   },
   skills: {
-    frontend: ["HTML", "CSS", "JavaScript", "React.js (basics)"],
-    backend: ["Node.js", "Express.js"],
-    database: ["MongoDB"],
-    languages: ["English", "Hindi", "Punjabi"],
-    tools: ["VS Code", "Git", "GitHub"],
-    concepts: ["Machine Learning (basics)", "Web Development"]
+    frontend: ["HTML5", "CSS3", "React.js", "Tailwind CSS", "Vite", "TypeScript", "Redux"],
+    backend: ["Node.js", "Express.js", "RESTful API Development", "Authentication", "JWT"],
+    database: ["MongoDB Atlas", "SQL"],
+    programmingLanguages: ["JavaScript (ES6+)", "TypeScript"],
+    toolsPlatforms: ["Git", "GitHub", "VS Code", "Render", "Firebase"],
+    softSkills: ["Problem Solving", "Team Collaboration", "Time Management", "Critical Thinking", "Decision Making", "Adaptability"],
+    languages: ["English", "Hindi", "Punjabi"]
   },
   projects: [
     {
       title: "Travelsphere - Smart Travel Companion Platform",
-      description: "Developed using React.js, Node.js, Express.js, and MongoDB. Features like hotel listings, search/filter system, wishlist, and secure user authentication. Designed a responsive UI using Tailwind CSS.",
-      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      link: "#"
+      description: "Built an AI-powered travel planning and booking platform using React.js, Node.js, Express.js, and MongoDB. Integrated Google Gemini AI for personalized itinerary generation, implemented authentication, booking management, QR code functionality, PDF itinerary downloads, interactive maps, and responsive user interfaces. Developed REST APIs and managed cloud-based data storage using MongoDB Atlas and Firebase.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Google Gemini AI", "MongoDB Atlas", "Firebase"],
+      link: "https://travelsphere-smart-travel-companion-m77d.onrender.com/"
     },
     {
-      title: "IMDB Clone React App",
-      description: "Built using React.js, HTML, CSS, and JavaScript. Integrated APIs to fetch and display movie data. Implemented search functionality and dynamic UI rendering.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      link: "#"
+      title: "AI-Powered Legal Document Simplifier (LegalLens AI)",
+      description: "Developed a full-stack MERN application that simplifies complex legal documents using Google Gemini AI. Implemented document upload, text extraction, risk analysis, clause classification, contract comparison, and AI-powered legal chat features. Integrated JWT authentication, MongoDB, and automated report generation for secure document management.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "MERN", "Google Gemini AI", "JWT"],
+      link: "https://legal-lens-ai-2.onrender.com/"
     },
     {
-      title: "Heart Disease Prediction System",
-      description: "Developed using Python and Machine Learning algorithms. Predicted heart disease based on user input data using libraries like Pandas, NumPy, and Scikit-learn.",
-      tech: ["Python", "Machine Learning", "Scikit-learn", "Pandas"],
-      link: "#"
+      title: "IMDb Clone React App",
+      description: "Built a movie discovery web application using React.js and TMDb API. Implemented dynamic movie listings, detailed movie pages, category-based browsing (Popular, Top Rated, Upcoming), image carousels, and responsive UI. Utilized React Router, React Hooks, API integration, and reusable components to deliver a seamless single-page user experience.",
+      tech: ["React.js", "TMDb API", "React Router", "React Hooks", "CSS3", "HTML5"],
+      link: ""
     }
   ],
   experience: [
     {
-      role: "Full Stack Intern",
-      company: "Alpha IT Management Services, Mohali",
-      duration: "Jan 2026 - Present",
-      description: "Working on full-stack development projects, contributing to both frontend and backend tasks."
-    },
-    {
-      role: "Summer Intern",
-      company: "Future Finders, Mohali",
-      duration: "June 2024 - July 2024",
-      description: "Gained exposure to industry practices and assisted in development tasks during the internship."
+      role: "Full Stack Training",
+      company: "Alpha IT Management Services",
+      duration: "Jan 2026 – June 2026",
+      description: [
+        "Developed responsive web applications using React.js and Node.js.",
+        "Created REST APIs using Express.js and integrated MongoDB databases.",
+        "Worked on debugging, API integration, and frontend optimization."
+      ]
     }
   ],
   education: [
     {
-      degree: "B.Tech in Computer Science & Engineering",
-      institution: "CT Group of Institutions of Engineering , Management and technology shahpur Campus, Jalandhar",
-      duration: "2022 - 2026",
+      degree: "B.Tech, Computer Science & Engineering",
+      institution: "CT GROUP OF INSTITUTIONS, Jalandhar",
+      duration: "2022-2026"
     },
     {
-      degree: "Senior Secondary (12th), CBSE",
-      institution: "Seth Hukam Chand SD Public sr sec school",
-      duration: "2022",
-      details: "Score: 68%"
+      degree: "Senior Secondary",
+      institution: "SETH HUKAM CHAND SD PUBLIC SR SEC SCHOOL KPT ROAD, Jalandhar",
+      duration: "CBSE, 2022"
     },
     {
-      degree: "Secondary (10th), CBSE",
-      institution: "Seth Hukam Chand SD Public sr sec school",
-      duration: "2020",
-      details: "Score: 69%"
+      degree: "Secondary",
+      institution: "SETH HUKAM CHAND SD PUBLIC SR SEC SCHOOL KPT ROAD, Jalandhar",
+      duration: "CBSE, 2020"
     }
   ]
 };

@@ -1,7 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { portfolioData } from "../data";
-import { FiMail, FiPhone, FiMapPin, FiGithub } from "react-icons/fi";
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
+  FiGithub,
+  FiLinkedin,
+} from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -28,7 +35,12 @@ function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm uppercase tracking-widest font-bold">Email Me</p>
-                  <p className="text-white font-medium">{portfolioData.contact.email}</p>
+           <a
+               href={`mailto:${portfolioData.contact.email}`}
+             className="text-white font-medium hover:text-purple-400 transition"
+>
+  {portfolioData.contact.email}
+</a>
                 </div>
               </div>
 
@@ -38,9 +50,29 @@ function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm uppercase tracking-widest font-bold">Call Me</p>
-                  <p className="text-white font-medium">{portfolioData.contact.phone}</p>
+                  <a
+                    href={`tel:${portfolioData.contact.phone}`}
+                    className="text-white font-medium hover:text-purple-400 transition"
+                  >
+                    {portfolioData.contact.phone}
+                  </a>
                 </div>
               </div>
+
+              <a
+                href={`https://wa.me/${portfolioData.contact.whatsapp}?text=${encodeURIComponent("Hi Prerna, I found your portfolio and would like to connect.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-6 group"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                  <FaWhatsapp size={24} />
+                </div>
+                <div>
+                  <p className="text-gray-500 text-sm uppercase tracking-widest font-bold">WhatsApp</p>
+                  <p className="text-white font-medium">{portfolioData.contact.whatsapp}</p>
+                </div>
+              </a>
 
               <div className="flex items-center gap-6 group">
                 <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-all">
@@ -52,20 +84,22 @@ function Contact() {
                 </div>
               </div>
 
-              <a 
-                href={portfolioData.contact.github} 
-                target="_blank" 
-                rel="noreferrer"
-                className="flex items-center gap-6 group"
-              >
+              <div className="flex items-center gap-6 group">
                 <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-all">
                   <FiGithub size={24} />
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm uppercase tracking-widest font-bold">GitHub</p>
-                  <p className="text-white font-medium">@prernagulati109-pixel</p>
+                  <a
+                    href={portfolioData.contact.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white font-medium hover:text-purple-400 transition"
+                  >
+                    @prernagulati109-pixel
+                  </a>
                 </div>
-              </a>
+              </div>
             </div>
           </motion.div>
 
@@ -109,6 +143,21 @@ function Contact() {
               >
                 Send Message
               </button>
+              <div className="flex items-center gap-4 my-4">
+                <div className="flex-1 h-px bg-white/10" />
+                <span className="text-gray-400 uppercase tracking-widest font-bold">OR</span>
+                <div className="flex-1 h-px bg-white/10" />
+              </div>
+
+              <a
+                href={`https://wa.me/${portfolioData.contact.whatsapp}?text=${encodeURIComponent("Hi Prerna, I found your portfolio and would like to connect.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-green-600 hover:bg-green-700 text-white rounded-xl font-bold transition-all flex items-center justify-center gap-3"
+              >
+                <FaWhatsapp />
+                Send Message on WhatsApp
+              </a>
             </form>
           </motion.div>
         </div>

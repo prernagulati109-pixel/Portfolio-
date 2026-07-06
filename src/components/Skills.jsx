@@ -7,10 +7,11 @@ function Skills() {
     { title: "Frontend", skills: portfolioData.skills.frontend },
     { title: "Backend", skills: portfolioData.skills.backend },
     { title: "Database", skills: portfolioData.skills.database },
-    { title: "Tools", skills: portfolioData.skills.tools },
+    { title: "Programming Languages", skills: portfolioData.skills.programmingLanguages },
+    { title: "Tools & Platforms", skills: portfolioData.skills.toolsPlatforms },
+    { title: "Soft Skills", skills: portfolioData.skills.softSkills },
     { title: "Languages", skills: portfolioData.skills.languages },
-    { title: "Concepts", skills: portfolioData.skills.concepts },
-  ];
+  ].filter(category => category.skills && category.skills.length > 0);
 
   return (
     <section id="skills" className="py-24 bg-[#0a0a0a]">

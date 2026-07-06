@@ -42,9 +42,17 @@ function Experience() {
                   {exp.duration}
                 </span>
               </div>
-              <p className="text-gray-400 leading-relaxed italic">
-                "{exp.description}"
-              </p>
+              {Array.isArray(exp.description) ? (
+                <ul className="list-disc pl-5 text-gray-400 leading-relaxed space-y-2 mt-2">
+                  {exp.description.map((bullet, bIdx) => (
+                    <li key={bIdx}>{bullet}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-gray-400 leading-relaxed italic">
+                  "{exp.description}"
+                </p>
+              )}
               
               {/* Timeline connector visual (decorative) */}
               <div className="absolute top-1/2 -left-4 w-2 h-2 bg-purple-500 rounded-full hidden md:block"></div>
